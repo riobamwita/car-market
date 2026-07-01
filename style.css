@@ -220,34 +220,31 @@ nav a:hover::after{
     align-items:center;
     justify-content:center;
 
-    padding:18px 42px;
+    padding:18px 40px;
 
-    background:rgba(255,255,255,0.12);
-    backdrop-filter:blur(18px);
-    -webkit-backdrop-filter:blur(18px);
+    background:rgba(255,255,255,.08);
 
-    color:#fff;
+    backdrop-filter:blur(25px);
+
+    border:1px solid rgba(255,255,255,.18);
+
+    border-radius:12px;
+
+    color:white;
+
     font-weight:600;
-    font-size:15px;
     letter-spacing:1px;
 
-    border:1px solid rgba(255,255,255,.25);
+    box-shadow:
+        0 12px 35px rgba(0,0,0,.18);
 
-    clip-path:polygon(
-        8% 0,
-        100% 0,
-        92% 100%,
-        0 100%
-    );
-
-    transition:.35s ease;
+    transition:.3s;
 }
 
 .view-listings:hover{
-    background:rgba(212,160,23,.85);
+    background:rgba(255,255,255,.95);
     color:#111;
-    border-color:#d4a017;
-    transform:translateY(-4px);
+    transform:translateY(-3px);
 }
 
 .cars,

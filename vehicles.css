@@ -510,9 +510,6 @@ ul{
 }
 
 
-
-/* IMAGE ZOOM */
-
 .lightbox-gallery img{
 
     transition:.3s ease;
@@ -522,19 +519,13 @@ ul{
 }
 
 
-.lightbox-gallery img.zoomed{
-
-    object-fit:contain;
-
-    transform:scale(1.8);
-
-    cursor:zoom-out;
-
+.lightbox-gallery img.zoomed {
+    transform: scale(1.8);
+    cursor: zoom-out;
+    transition: transform .25s ease;
+    z-index: 5;
 }
 
-
-
-/* HIDE ARROWS ON TOUCH DEVICES */
 
 @media (hover:none){
 
