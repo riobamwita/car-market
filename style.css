@@ -463,14 +463,18 @@ html{
 .vehicle-price{
     font-size:1.2rem;
     font-weight:700;
+    background:linear-gradient(90deg,#3c2b7f,#230a76);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
 }
 
 .currency{
-    font-size:.68em;
-    font-weight:700;
-    text-transform:uppercase;
+    font-size:.65em;
+    color:#888;
+    -webkit-text-fill-color:#888; /* overrides parent's transparent text */
+    background:none;
+    font-weight:600;
     letter-spacing:1px;
-    opacity:.75;
     margin-right:4px;
 }
 
