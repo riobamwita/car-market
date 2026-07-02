@@ -688,8 +688,8 @@ document.getElementById("shareBtn").addEventListener("click", async function (e)
     if (navigator.share) {
         try {
             await navigator.share({
-                title: "Vobi Motorcars",
-                text: "Check out Vobi Motorcars!",
+                title: "Josam Auto",
+                text: "Check out Josam Auto!",
                 url: window.location.href
             });
         } catch (err) {
