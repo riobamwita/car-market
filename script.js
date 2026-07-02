@@ -110,21 +110,6 @@ vehicle.price != null
         updateMoreCars();
     }
 
-    document
-    .querySelectorAll(".vehicle-card")
-    .forEach((card, index) => {
-
-        card.classList.toggle(
-            "hidden",
-            index >= 8
-        );
-
-    });
-
-if (typeof updateMoreCars === "function") {
-    updateMoreCars();
-}
-
 }
 
 function populateFilters() {
@@ -200,13 +185,14 @@ function setupVehicleSearch() {
     const year = document.getElementById("yearFilter").value;
     const deal = document.getElementById("dealFilter").value;
 
-    filterActive =
-        query ||
-        brand ||
-        type ||
-        fuel ||
-        year ||
-        deal;
+    filterActive = !!(
+    query ||
+    brand ||
+    type ||
+    fuel ||
+    year ||
+    deal
+);
 
     const filtered = vehicles.filter(vehicle => {
 
@@ -291,15 +277,13 @@ function setupVehicleSearch() {
 
     searchInput.value = "";
 
-    resetCards();
-
     toggleNoResults(true);
 
     filterActive = false;
 
     sessionStorage.removeItem("vehicleFilters");
     sessionStorage.removeItem(
-    "MoreCarsExpanded"
+    "moreCarsExpanded"
 );
 
     document
