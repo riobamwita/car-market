@@ -1129,24 +1129,32 @@ nav a:last-child{
 .vehicle-info h3{
     font-size:.92rem;
     line-height:1.25;
-    margin-bottom:4px;
+    margin-bottom:2px;
 }
 
 .vehicle-info p{
-    font-size:.78rem;
-    margin-bottom:3px;
+    font-size:.68rem;
+    margin-bottom:2px;
 }
 
 .vehicle-bottom{
-    margin-top:8px;
+    margin-top:2px;
 }
 
 .vehicle-bottom small{
-    font-size:.70rem;
+    font-size:.50rem;
 }
 
 .vehicle-price{
     font-size:.75rem;
+}
+
+.vehicle-card{
+    box-shadow:0 8px 22px rgba(0,0,0,.08);
+}
+
+.vehicle-card img{
+    border-bottom:1px solid rgba(0,0,0,.05);
 }
 
 .view-more-btn{
